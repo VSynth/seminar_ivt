@@ -26,7 +26,7 @@ class Polynom:
             pol_out += "0"
         return pol_out
 
-    def Vypis_hodnotu(self,x):
+    def Vycisli(self,x):
         hodnota = 0
         for i in range(len(self.koeficienty)):
             hodnota += self.koeficienty[i]*x**i
@@ -67,7 +67,7 @@ class Polynom:
 p1 = Polynom([-1,0,1])
 p2 = Polynom([-1,0,1])
 print(str(p1))
-print(p1.Vypis_hodnotu(2))
+print(p1.Vycisli(2))
 print(p1.Vrat_stupen())
 print(str(p1.Nasob_skalarem(2)))
 print(Polynom.Secti(p1,p2))
