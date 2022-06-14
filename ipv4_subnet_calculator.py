@@ -1,4 +1,4 @@
-ipv4 = "251.154.20.98/30"#input("ipv4 - 0.0.0.0/0 : ")
+ipv4 = input("ipv4 - 0.0.0.0/0 : ")
 subnet = int(ipv4.split("/")[1])
 ipv4_dec = [int(ipv4.split("/")[0].split(".")[x]) for x in range(len(ipv4.split("/")[0].split(".")))]
 
